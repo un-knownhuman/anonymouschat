@@ -1,0 +1,46 @@
+<!-- site1/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receiver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="role-select">
+    <button class="active-role-select active-role" id="person1">anonymous</button>
+    <button class="active-role-select" id="person2">Tavashi</button>
+  </div>
+
+  <div class="chat-container">
+    <h2 class="chat-head">anonymous chatting...</h2>
+
+    <div class="chat-msg">
+      <div class="msg bg-blue">
+        <div class="msg-sender"></div>
+        <div class="msg-text"></div>
+        <div class="msg-time"></div>
+      </div>
+
+    
+      <div class="msg bg-grey">
+        <div class="msg-sender"></div>
+        <div class="msg-text"></div>
+        <div class="msg-timestamp"></div>
+      </div>
+    </div>
+    
+    <form class="chat-input">
+      <input type="text" class="chatInput" required placeholder="Type here...." />
+      <button type="submit" class="button send-button" >Send</button>
+    </form>
+
+    <button class="button clear-chat">Clear Messages</button>
+
+
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
